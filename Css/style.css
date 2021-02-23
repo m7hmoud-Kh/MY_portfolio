@@ -123,9 +123,15 @@ nav ul li {
 
 }
 
+
 .address li i,
 .address li p {
     font-size: 14px;
+}
+
+.address .email:hover {
+    color: #ffa500;
+    text-decoration: none;
 }
 
 ul li p:hover {
@@ -338,7 +344,10 @@ ul li p:hover {
 .style_pro {
     background: #151515;
     border-radius: 22px;
-    max-width: 40%;
+    max-width: 31.33% !important;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 /* End Project */
@@ -656,10 +665,45 @@ left: ;
         border: 4px solid #ffa500;
     }
 
+    .style_pro {
+        max-width: 100% !important;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .style_cer
+    {
+        min-width: 100% !important;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .under_map .social
+    {
+        max-width: 40% !important;
+    } 
+    .under_map .copy_right
+    {
+        font-size: 14px !important;
+    }
+
 
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
+
+    .style_pro {
+        min-width: 48% !important;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .style_cer
+    {
+        min-width: 98% !important;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
 
     .img-view .container {
         width: 90% !important;
