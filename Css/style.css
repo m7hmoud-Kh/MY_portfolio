@@ -22,6 +22,11 @@ a {
 
 }
 
+.link_email:hover
+{
+    text-decoration: none;
+}
+
 /* Start Header */
 header {
     height: 100vh;
@@ -72,7 +77,7 @@ nav ul li {
 /* .xx{
     width: 300px;
     height: 300px;
-    
+
 } */
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #ffa500;
@@ -350,6 +355,11 @@ ul li p:hover {
     margin-top: 1%;
 }
 
+.live_demo
+{
+    justify-content: flex-start !important;
+}
+
 /* End Project */
 
 /* Start contact */
@@ -450,7 +460,7 @@ ul li p:hover {
 
 /* .block:hover {
     transform: scale(1.2,1.2);
-    
+
 } */
 
 
@@ -680,7 +690,7 @@ left: ;
     .under_map .social
     {
         max-width: 40% !important;
-    } 
+    }
     .under_map .copy_right
     {
         font-size: 14px !important;

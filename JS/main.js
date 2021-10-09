@@ -1,11 +1,11 @@
 
 $(document).ready(function () {
 
-    // get color from local storage 
+    // get color from local storage
     var color;
     if (localStorage.getItem("color") == null) {
         // if this is the firist time (local storage does not exist)
-        color = "rgb(255, 165, 0)"; // default color 
+        color = "rgb(255, 165, 0)"; // default color
     }
     else {
 
@@ -42,6 +42,22 @@ $(document).ready(function () {
             $(this).css('color', 'rgb(226, 225, 225)')
         }
         );
+
+        $('ul li p a').hover(function () {
+            // over
+            $(this).css('color', color);
+
+        }, function () {
+            // out
+            $(this).css('color', 'rgb(226, 225, 225)')
+        }
+        );
+
+
+
+
+
+
         $('.social li a').hover(function () {
             // over
             $(this).css('color', color);
@@ -212,11 +228,11 @@ $(document).ready(function () {
 
         if (sidebarLeftProperty == "0px") {
 
-            // if sidebar menu opend then close 
+            // if sidebar menu opend then close
             $(".sidebar-container").animate({ left: `-${sidebarWidth}px` }, 500);
         }
         else {
-            // if close then open it 
+            // if close then open it
             $(".sidebar-container").animate({ left: `0px` }, 500);
 
         }
@@ -303,24 +319,24 @@ $(document).ready(function () {
             }
         });
 
-    // handeling active page 
+    // handeling active page
     $(document).on("click", ".list-page li p", function (e) {
 
 
-        // apply to the clicked element background-color 
+        // apply to the clicked element background-color
         $(this).css("background-color", color).addClass("active-page");
-        // remove background-color from the other element     
+        // remove background-color from the other element
         $(this).parent().siblings().find('p').css("background-color", "transparent").removeClass("active-page");
 
     });
-   
-    
-    // project section pages 
+
+
+    // project section pages
     $(".two").hide();
     var mixer = mixitup('#mixit');
     var mixer = mixitup(containerEl);
 
-     
+
     var mixer = mixitup('#mixit', {
         selectors: {
             target: '.blog-item'
@@ -329,18 +345,18 @@ $(document).ready(function () {
             duration: 300
         }
     });
-    
-    
+
+
 
 
 
 });
 
- 
 
-// Scroll Reveal 
+
+// Scroll Reveal
 let _scrollReveal = function () {
-    // set common reveal properties on all alement 
+    // set common reveal properties on all alement
     let SR = ScrollReveal({
         distance: '30px',
         duration: 1500,
@@ -357,7 +373,7 @@ let _scrollReveal = function () {
     SR.reveal(
         `  .edu-details,
            .break-line ,
-            .about-me h2 , 
+            .about-me h2 ,
             .about-me p ,
              .about-content .col-md-12 ,
              edu-left h2 , exp-right h2 ,
@@ -378,10 +394,10 @@ _scrollReveal();
 $(document).ready(function(){
 
     // close loading screen
-     
+
     $("#loading").fadeOut(1000 ,function () {
         $("body").css("overflow","auto");
-    
+
       });
-    
+
   });
