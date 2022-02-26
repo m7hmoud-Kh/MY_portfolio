@@ -76,7 +76,7 @@ $(document).ready(function () {
             $(this).css('color', 'rgb(226, 225, 225)')
         }
         );
-        $('.github a').hover(function () {
+        $('.resource a').hover(function () {
             // over
             $(this).css('color', color);
 

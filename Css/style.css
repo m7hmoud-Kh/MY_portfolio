@@ -323,18 +323,22 @@ ul li p:hover {
     margin-bottom: 10px;
 }
 
-.github a {
-    font-size: 22px;
-    line-height: 20px;
+.resource {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    border-radius: 5px;
-    transition: 0.6s;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
-.github a:hover {
+.resource a {
+    font-size: 22px;
+    line-height: 20px;
+    border-radius: 5px;
+    transition: 0.6s;
+    margin-right: 3px;
+}
+
+.resource a:hover {
 
     color: #ffa500;
 }
